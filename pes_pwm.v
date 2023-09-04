@@ -1,4 +1,4 @@
-module iiitb_pwm_gen
+module pes_pwm
  (
  clk, // 100MHz clock input 
  increase_duty, // input to increase 10% duty cycle 
