@@ -4,15 +4,13 @@ module pes_pwm_tb;
  reg clk;
  reg increase_duty;
  reg decrease_duty;
- reg reset;
  // Outputs
  wire PWM_OUT;
  // Instantiate the PWM Generator with variable duty cycle in Verilog
  pes_pwm PWM_Generator_Unit(
   .clk(clk), 
   .increase_duty(increase_duty), 
-  .decrease_duty(decrease_duty), 
-  .reset(reset),
+  .decrease_duty(decrease_duty),
   .PWM_OUT(PWM_OUT)
  );
  // Create 100Mhz clock
@@ -25,15 +23,10 @@ module pes_pwm_tb;
     end
  initial begin
  clk = 0;
- reset=0;
  
-
  forever #5 clk = ~clk;
  end 
-initial begin
-#5;reset=1;
-#5;reset =0;
-end
+
  initial begin
   increase_duty = 0;
   decrease_duty = 0;
