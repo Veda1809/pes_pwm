@@ -16,7 +16,9 @@
 ## Duty Cycle of PWM
 + As we know, a PWM signal stays **ON** for a given time and stays **OFF** for a certain time. The percentage of time for which the signal remains **ON** is known as the duty cycle. If the signal is always **ON**,  then the signal must have a 100 % duty cycle. The formula to calculate the duty cycle is given as follows:
 
+<p align="center">
 <img width="245" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/51885dab-c5a3-42d9-9eca-5e0edacd9a76">
+</p>
 
 + The average value of the voltage depends on the duty cycle. As a result, the average value can be varied by controlling the width of the **ON** of a pulse.
 
@@ -28,8 +30,8 @@
 
 + This PWM generator generates 10Mhz signal. We can control duty cycles in steps of 10%. The default duty cycle is 50%. Along with clock signal we provide another two external signals to increase and decrease the duty cycle.
 
-<p align-"center">
-<img width="579" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/2907a4a6-ee83-41e9-a97f-c1f534377548">
+<p align="center">
+<img width="500" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/2907a4a6-ee83-41e9-a97f-c1f534377548">
 </p>
 
 + The key components we need for this particular circuit are an n-bit counter and comparator. The duty passed to the comparator is compared to the counter's current value. If the counter's current value is less than the required value, the comparator produces a high output. Similar to this, if the counter's current value is higher than its duty, the comparator's output will be low. Since the counter starts at zero, the comparator initially produces a large output, which decreases as the counter approaches its duty. Therefore, we can manage duty cycle by managing duty.
