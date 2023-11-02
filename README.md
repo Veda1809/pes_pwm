@@ -259,6 +259,13 @@ $ ./flow.tcl -design pes_pwm -tag RUN
 
 + Area = 4723.994 um^2
 
+## Performance
+<p align="center">
+ <img width="527" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/ae72a0fb-8a7f-4a52-b2dd-f2afc02a5137">
+</p>
+
++ Performance = 1/(clock period-slack) = 1/(10-1.13)ps = 112.74GHz
+
 ## Flop/Standard Cell
 <p align="center">
 <img width="353" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/c5981ce4-7abb-4675-9397-3c363071a8fd">
