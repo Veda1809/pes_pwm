@@ -244,6 +244,11 @@ $ ./flow.tcl -design pes_pwm -tag RUN
 <img width="555" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/e7b53776-6a94-4b3f-ae92-524325481f56">
 </p>
 
+*Layout View*
+<p align="center">
+ <img width="823" alt="image" src="https://github.com/Veda1809/pes_pwm/assets/142098395/737912ff-f085-426e-a5b6-eb413c71e928">
+</p>
+
 # Post Layout Results
 ## Gate Count
 <p align="center">
